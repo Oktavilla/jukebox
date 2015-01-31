@@ -4,7 +4,7 @@ module.exports = function(app, express){
   
   app.set("port", process.env.PORT || 3000);
   app.set("views", "server/templates");
-  app.set("view engine", "ejs");
+  app.set("view engine", "handlebars");
   app.use(express.static("public"));
   
   if (env === "development") {
