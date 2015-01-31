@@ -10,7 +10,7 @@ var apiCall = function(call, response) {
 };
 
 var apiFail = function(response) {
-  response.json(500, {});
+  response.status(500).json({ error: "Failed because reasons." });
 };
 
 module.exports = {

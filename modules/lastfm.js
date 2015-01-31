@@ -3,8 +3,8 @@ var Spotify = require("./spotify");
 var Promise = require("promised-io/promise");
 var _ = require('underscore-node');
 
-var API_KEY = "";
-var SECRET = "";
+var API_KEY = process.env.LASTFM_API_KEY;
+var SECRET = process.env.LASTFM_API_SECRET;
 var API_ROOT_URL = "http://ws.audioscrobbler.com/2.0/?format=json&api_key=" + API_KEY + "&method=";
 
 module.exports = {
