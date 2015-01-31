@@ -1,0 +1,27 @@
+{
+  "name": "oktavilla-jukebox",
+  "version": "0.8.21",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "~0.10.24"
+  },
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.11",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-requirejs": "~0.4.3",
+    "grunt-express-server": "~0.4.11",
+    "grunt-env": "~0.4.1",
+    "grunt-shell": "~0.6.4",
+    "grunt-sass": "0.16.1",
+    "grunt-concurrent": "1.0.0",
+    "promised-io": "0.3.4",
+    "follow-redirects": "0.0.3",
+    "express": "4.3.0",
+    "ejs": "*",
+    "underscore-node": "0.1.2"
+  }
+}
