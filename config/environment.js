@@ -15,7 +15,6 @@ module.exports = function(app, express){
   app.use(express.static("public"));
   
   if (env === "development") {
-    app.use("/javascripts", express.static("./app/javascripts"));
     app.use("/stylesheets", express.static("./tmp/stylesheets"));
   }
 };
