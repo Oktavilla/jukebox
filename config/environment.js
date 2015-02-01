@@ -12,7 +12,7 @@ module.exports = function(app, express){
   }));
   app.set("views", "templates");
   app.set("view engine", "hbs");
-  app.use(express.static("public"));
+  app.use(express.static("./public"));
   
   if (env === "development") {
     app.use("/stylesheets", express.static("./tmp/stylesheets"));
