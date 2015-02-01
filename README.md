@@ -11,8 +11,13 @@ Surfing to `/` will show the recent tracks of the Oktavilla Last.fm group.
 * `/api/group/[groupname]/playlist/` will give you the recently played tracks for the names last.fm group (with Spotify links)
 * `/api/group/[groupname]/` will give you the users of a specified Lat.fm group.
 
+## Set up Heroku
+
+    $ heroku config:add BUILDPACK_URL=https://github.com/Oktavilla/heroku-buildpack-nodejs-grunt --app myapp
+
+
 ## Run locally
 
-`$ grunt server`
+    $ grunt server
 
 Enjoy the music.
