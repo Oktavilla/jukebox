@@ -17,16 +17,16 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
-        includePaths: ["./stylesheets/"]
+        includePaths: ["./sass/"]
       },
       development: {
         files: {
-          "./tmp/stylesheets/main.css": "./app/stylesheets/main.scss"
+          "./tmp/stylesheets/main.css": "./sass/main.scss"
         }
       },
       production: {
         files: {
-          "./public/stylesheets/main.css": "./app/stylesheets/main.scss"
+          "./public/stylesheets/main.css": "./sass/main.scss"
         }
       }
     },
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
 
     watch: {
       scss: {
-        files: ["stylesheets/**/*.scss", "stylesheets/*.scss"],
+        files: ["sass/*.scss"],
         tasks: ["sass:development"]
       },
       js: {

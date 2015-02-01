@@ -2,6 +2,7 @@ var api = rootRequire("handlers/api");
 
 // Routes
 var routes = {
+  "/": "index",
   "/api/user/(*)/top-artists/": "API_userTopArtists",
   "/api/user/(*)/recent-tracks/": "API_UserRecentTracks",
   "/api/group/(*)/playlist/": "API_groupPlaylist",
@@ -10,6 +11,9 @@ var routes = {
 
 // Controllers
 var controllers = {
+  "index": function(request, response) {
+    response.render("index");
+  },
   "API_userTopArtists": function(request, response) {
     api.userTopArtists(request, response);
   },
