@@ -64,7 +64,6 @@ module.exports = function(grunt) {
     },
   });
 
-  grunt.loadNpmTasks("grunt-contrib-requirejs");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-express-server");
   grunt.loadNpmTasks("grunt-env");
@@ -82,7 +81,6 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask("heroku", [
-    "setup",
     "sass:production"
   ]);
 };
