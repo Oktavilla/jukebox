@@ -13,6 +13,7 @@ body {
   letter-spacing: 0.02em;
   margin: 0;
   padding: 0;
+  background: #43CD80;
 }
 
 a {
@@ -31,7 +32,6 @@ li {
   list-style-type: none;
   margin: 0;
   padding: 20px 30px;
-  background: #43CD80;
 
   @for $i from 1 through 20 {
     &:nth-child(#{$i+1}) {
@@ -58,4 +58,8 @@ li {
       content: ", ";
     }
   }
+}
+
+.loading {
+  padding: 20px 30px;
 }
