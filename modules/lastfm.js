@@ -45,7 +45,7 @@ module.exports = {
             "title": track.artist["#text"] + " - " + track.name,
             "spotifyUrl": Spotify.getUrl(track.artist["#text"] + " " + track.name, "search"),
             "nowPlaying": track["@attr"] && track["@attr"].nowplaying,
-            "playTime": !track.date ? new Date().getTime() : track.date.uts
+            "playTime": !track.date ? parseInt(new Date().getTime() / 1000) : track.date.uts
           };
 
           if (userRealName) {
